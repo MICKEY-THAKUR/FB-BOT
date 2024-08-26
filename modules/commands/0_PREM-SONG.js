@@ -48,7 +48,7 @@ module.exports.handleReply = async function ({ api, event, handleReply }) {
         if (fs.statSync(path).size > 26214400) return api.sendMessage('The file cannot be sent because the capacity is greater than 25MB.', event.threadID, () => fs.unlinkSync(path), event.messageID);
         api.unsendMessage(handleReply.messageID)
         return api.sendMessage({ 
-		body: `┏━━━━━┓\n     नेहा-ठाकुर                ✧══•❁𝗦𝗢𝗡𝗚❁•══✧\n┗━━━━━┛\n\n🎵 Title𒁍   ${data.title}\n🎶 Name Channel 𒁍   ${data.author}\n⏱️ Time 𒁍  ${this.convertHMS(data.dur)}\n👀 Views 𒁍  ${data.viewCount}\n🥰 Likes 𒁍   ${data.likes}\n⏱️ Processing time 𒁍   ${Math.floor((Date.now()- data.timestart)/1000)} second\n✧═══•❁PREM-BABU❁•═══✧`,
+		body: `┏━━━━━┓\n     नेहा-ठाकुर                ✧══•❁𝗦𝗢𝗡𝗚❁•══✧\n┗━━━━━┛\n\n🎵 Title𒁍   ${data.title}\n🎶 Name Channel 𒁍   ${data.author}\n⏱️ Time 𒁍  ${this.convertHMS(data.dur)}\n👀 Views 𒁍  ${data.viewCount}\n🥰 Likes 𒁍   ${data.likes}\n⏱️ Processing time 𒁍   ${Math.floor((Date.now()- data.timestart)/1000)} second\n✧═══•❁NEHA-THAKUR❁•═══✧`,
             attachment: fs.createReadStream(path)}, event.threadID, ()=> fs.unlinkSync(path), 
          event.messageID)
             
