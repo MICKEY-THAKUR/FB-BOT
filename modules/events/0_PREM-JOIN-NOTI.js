@@ -15,7 +15,7 @@ module.exports.onLoad = function () {
     const { existsSync, mkdirSync } = global.nodemodule["fs-extra"];
     const { join } = global.nodemodule["path"];
  
-    const path = join(__dirname, "PREM BABU", "PREM-1");
+    const path = join(__dirname, "VEER THAKUR", "VEER-1");
     if (existsSync(path)) mkdirSync(path, { recursive: true }); 
  
     const path2 = join(__dirname, "PREM BABU", "PREM-1");
@@ -31,7 +31,7 @@ module.exports.run = async function({ api, event }) {
     if (event.logMessageData.addedParticipants.some(i => i.userFbId == api.getCurrentUserID())) {
         api.changeNickname(`[ ${global.config.PREFIX} ] 𒁍 ${(!global.config.BOTNAME) ? "TAKLU BABU" : global.config.BOTNAME}`, threadID, api.getCurrentUserID());
         const fs = require("fs");
-        return api.sendMessage("", event.threadID, () => api.sendMessage({body: `┏━━━━━┓\n    प्रेम-बाबू               ✧═•❁𝗪𝗘𝗟𝗖𝗢𝗠𝗘❁•═✧\n┗━━━━━┛\n\n\nलो में आ गया आपका टकलू बाबू जल्दी से स्वागत करो हमारा 😀\n════════════════════════ ❁\n\nऔर जल्दी से मेरे बॉस प्रेम बाबू को रिक्वेस्ट भेज दो 😌\n════════════════════════ ❁\n\nMY BOSS  𒁍 MR PREM SHARMA 🌺\n════════════════════════ ❁\n\nFACEBOOK ID LINK 🔗 𒁍 https://www.facebook.com/profile.php?id=61564375154184\n════════════════════════ ❁\n\nMY PREFIX 𒁍   [${global.config.PREFIX}]\n════════════════════════ ❁\n\nTHANKYOU FOR USING MR PREM BABU BOT`, attachment: fs.createReadStream(__dirname + "/cache/botjoin.mp4")} ,threadID));
+        return api.sendMessage("", event.threadID, () => api.sendMessage({body: `┏━━━━━┓\n    वीर-ठाकुर              ✧═•❁𝗪𝗘𝗟𝗖𝗢𝗠𝗘❁•═✧\n┗━━━━━┛\n\n\nलो में आ गया आपका टकलू बाबू जल्दी से स्वागत करो हमारा 😀\n════════════════════════ ❁\n\nऔर जल्दी से मेरे बॉस प्रेम बाबू को रिक्वेस्ट भेज दो 😌\n════════════════════════ ❁\n\nMY BOSS  𒁍 MR PREM SHARMA 🌺\n════════════════════════ ❁\n\nFACEBOOK ID LINK 🔗 𒁍 https://www.facebook.com/profile.php?id=61564375154184\n════════════════════════ ❁\n\nMY PREFIX 𒁍   [${global.config.PREFIX}]\n════════════════════════ ❁\n\nTHANKYOU FOR USING MR PREM BABU BOT`, attachment: fs.createReadStream(__dirname + "/cache/botjoin.mp4")} ,threadID));
     }
     else {
         try {
@@ -52,7 +52,7 @@ module.exports.run = async function({ api, event }) {
             }
             memLength.sort((a, b) => a - b);
             
-            (typeof threadData.customJoin == "undefined") ? msg = "┏━━━━━┓\n    प्रेम-बाबू               ✧═•❁𝗪𝗘𝗟𝗖𝗢𝗠𝗘❁•═✧\n┗━━━━━┛\n\n\nHello 𒁍 {name}\nWelcome To {threadName}\n════════════════════════ ❁\nMY BOSS  𒁍 MR PREM SHARMA 🌺\n════════════════════════ ❁\nFACEBOOK ID LINK 🔗 𒁍 https://www.facebook.com/prembabu001\n════════════════════════ ❁\n𝖬𝖮𝖲𝖳 𝖶𝖤𝖫𝖢𝖮𝖬𝖤 𝖳𝖮 𝖯𝖱𝖤𝖬 𝖡𝖠𝖡U 𝖡𝖮𝖳\n════════════════════════ ❁\nBOT UPDATING 𒁍 MR PREM BABU 🌺\n════════════════════════ ❁\n\nलत तेरी ही लगी है....................... 🌺\nनशा सरेआम होगा....................... 🌺\nहर लम्हा तुम्हारे लबों पे.................. 🌺\nसिर्फ प्रेम बाबू का ही नाम होगा.........🌺\nआप इस ग्रुप के {soThanhVien}th मेंबर हो...........🐥\n════════════════════════ ❁\n         खाओ पियो और मेरे साथ मस्ती करो 🙂" : msg = threadData.customJoin;
+            (typeof threadData.customJoin == "undefined") ? msg = "┏━━━━━┓\n    वीर-ठाकुर               ✧═•❁𝗪𝗘𝗟𝗖𝗢𝗠𝗘❁•═✧\n┗━━━━━┛\n\n\nHello 𒁍 {name}\nWelcome To {threadName}\n════════════════════════ ❁\nMY ADMIN  𒁍 VEER THAKUR 🌺\n════════════════════════ ❁\nFACEBOOK ID LINK 🔗 𒁍 https://www.facebook.com/profile.php?id=61564375154184\n════════════════════════ ❁\n𝖬𝖮𝖲𝖳 𝖶𝖤𝖫𝖢𝖮𝖬𝖤 𝖳𝖮 VEER THAKUR 𝖡𝖮𝖳\n════════════════════════ ❁\nBOT UPDATING 𒁍 MR PREM BABU 🌺\n════════════════════════ ❁\n\nलत तेरी ही लगी है....................... 🌺\nनशा सरेआम होगा....................... 🌺\nहर लम्हा तुम्हारे लबों पे.................. 🌺\nसिर्फ प्रेम बाबू का ही नाम होगा.........🌺\nआप इस ग्रुप के {soThanhVien}th मेंबर हो...........🐥\n════════════════════════ ❁\n         खाओ पियो और मेरे साथ मस्ती करो 🙂" : msg = threadData.customJoin;
             msg = msg
             .replace(/\{name}/g, nameArray.join(', '))
             .replace(/\{type}/g, (memLength.length > 1) ?  '♥️🌺😘🍼🐥🙈' : 'Kaise Ho Ap')
@@ -65,7 +65,7 @@ module.exports.run = async function({ api, event }) {
  
             if (existsSync(pathGif)) formPush = { body: msg, attachment: createReadStream(pathvideo), mentions }
             else if (randomPath.length != 0) {
-                const pathRandom = join(__dirname, "PREM BABU", "PREM-1", `${randomPath[Math.floor(Math.random() * randomPath.length)]}`);
+                const pathRandom = join(__dirname, "VEER THAKUR", "VEER-1", `${randomPath[Math.floor(Math.random() * randomPath.length)]}`);
                 formPush = { body: msg, attachment: createReadStream(pathRandom), mentions }
             }
             else formPush = { body: msg, mentions }
